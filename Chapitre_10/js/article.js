@@ -3,8 +3,8 @@ var form = document.querySelector("form");
 
 form.addEventListener("submit", function(event) {
 	event.preventDefault();
-	var data = new FormData(form);
-	ajaxPost("https://oc-jswebsrv.herokuapp.com/article", data, function(reponse) {
+	var article = new FormData(form);
+	ajaxPost("https://oc-jswebsrv.herokuapp.com/article", article, function(reponse) {
 		console.log(reponse);
 		message.textContent = "L'article a bien été ajouté.";
 		setTimeout(function() {
