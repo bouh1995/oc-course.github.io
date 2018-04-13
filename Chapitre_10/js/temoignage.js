@@ -13,7 +13,7 @@ form.addEventListener("submit", function(event) {
 		message2.textContent = "Le temoignage a bien été ajouté.";
 		setTimeout(function() {
 			message2.textContent = "";
-		}, 3000);
+		}, 5000);
 		form.reset();
 	}, true);
 });
