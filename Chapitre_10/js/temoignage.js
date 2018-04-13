@@ -9,7 +9,7 @@ form.addEventListener("submit", function(event) {
 		message: event.target.elements.message.value
 	}
 
-	ajaxPost("https://oc-jswebsrv.herokuapp.com/temoignage", temoignage, function() {
+	ajaxPost("https://oc-jswebsrv.herokuapp.com/api/temoignage", temoignage, function() {
 		message2.textContent = "Le temoignage a bien été ajouté.";
 		setTimeout(function() {
 			message2.textContent = "";
